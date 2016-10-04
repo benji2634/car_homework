@@ -27,7 +27,7 @@ class TestCar < MiniTest::Test
       assert_equal(10, @car.speed)
    end
 
-   def test_car_can_brake_from_zero
+   def test_car_cant_brake_below_zero
       @car.brake
       assert_equal(0, @car.speed)
     end
